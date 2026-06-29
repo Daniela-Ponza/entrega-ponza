@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "Monstera Deliciosa",
+    "descripcion": "Planta tropical de interior, hojas perforadas únicas.",
+    "precio": "8.500",
+    "imagen": "img/monstera.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Cactus Dorado",
+    "descripcion": "Bajo mantenimiento, perfecto para lugares soleados.",
+    "precio": "3.200",
+    "imagen": "img/cactus.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Lavanda Francesa",
+    "descripcion": "Aromática y decorativa, ideal para balcones.",
+    "precio": "4.100",
+    "imagen": "img/lavanda.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Potus Plateado",
+    "descripcion": "Enredadera colgante resistente y de rápido crecimiento.",
+    "precio": "2.800",
+    "imagen": "img/potus.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Ficus Lyrata",
+    "descripcion": "El favorito del diseño de interiores moderno.",
+    "precio": "12.000",
+    "imagen": "img/ficus.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Kit Aromáticas",
+    "descripcion": "Perejil, Romero y Menta en maceta de barro.",
+    "precio": "5.600",
+    "imagen": "img/aromaticas.jpg"
+  }
+]

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíces Verdes — Vivero & Jardinería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+    <header>
+         <nav>
+            <a href="#" class="logo">
+                <div class="logo-icono">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22V12M12 12C12 12 7 10 5 6C9 4 13 7 12 12ZM12 12C12 12 17 10 19 6C15 4 11 7 12 12Z" stroke="#a8d878" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 22C8 18 10 16 12 16C14 16 16 18 16 22" stroke="#7bbf52" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="logo-texto">
+                    <strong>Raíces Verdes</strong>
+                    <p>Vivero & Jardinería</p>
+                </div>
+            </a>
+            <div class="nav-acciones">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <a href="#" class="carrito-btn" id="cartBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    Carrito
+                    <span class="carrito-badge" id="cartBadge">0</span>
+                </a>
+                <button class="hamburguesa" id="menuBtn" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+   
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Dale vida a cada rincón de tu hogar con <span>plantas</span></h1>
+                <p>Descubrí nuestra colección de plantas de interior y exterior, macetas artesanales y todo lo que necesitás para cultivar tu jardín ideal.</p>
+            </div>
+        </section>
+        <section class="productos">
+            <h2>Nuestros productos</h2>
+            <p class="bajada">Seleccionados con cuidado para que florezcan en tu hogar o jardín</p>
+            <div class="productos-grid" id="productosContainer"></div>
+        </section>
+
+        <section class="testimonios">
+            <div class="testimonios-contenido">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p class="bajada">Más de 2.400 familias ya llenan su hogar de verde</p>
+                <div class="testimonios-grid">
+                    <article class="testimonio-card">
+                        <p>"Compré un pothos plateado y llegó en condiciones perfectas, con raíces fuertes y follaje brillante. El embalaje fue increíble, con musgo protegiendo las raíces. Sin duda volvería a comprar."</p>
+                        <div class="testimonio-autor">
+                            <div class="autor-avatar" style="background-color: #e1f5ee; color: #1e3d14;">ML</div>
+                            <div class="autor-info">
+                                <strong>María Laura G.</strong>
+                                <span>Buenos Aires · Hace 2 semanas</span>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="testimonio-card">
+                        <p>"Pedí tres plantas distintas y todas llegaron súper bien. El asesoramiento que me dieron sobre cómo cuidarlas fue muy detallado. La monstera ya sacó una hoja nueva a la semana de llegar."</p>
+                        <div class="testimonio-autor">
+                            <div class="autor-avatar" style="background-color: #faeeda; color: #633806;">RC</div>
+                            <div class="autor-info">
+                                <strong>Rodrigo C.</strong>
+                                <span>Córdoba · Hace 1 mes</span>
+                            </div>
+                        </div>
+                    </article>
+                     <article class="testimonio-card">
+                        <p>"El cactus multicolor que compré para regalar fue un golazo. Lo presentaron en una maceta de cerámica hermosa. Mi mamá quedó encantada. Excelente calidad y atención personalizada."</p>
+                        <div class="testimonio-autor">
+                            <div class="autor-avatar" style="background-color: #fbeaf0; color: #4b1528;">SB</div>
+                            <div class="autor-info">
+                                <strong>Sofía B.</strong>
+                                <span>Rosario · Hace 3 semanas</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2>Hablemos</h2>
+            <p class="bajada">¿Tenés una consulta? Nuestros expertos te responden en menos de 24 horas</p>
+            <div class="contacto-layout">
+                <div>
+                    <form class="contacto-form">
+                        <h3>Envíanos tu consulta</h3>
+                        <p>Completá el formulario y te respondemos a la brevedad.</p>
+                        <div class="form-groupo">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" placeholder="Ej: Ana García" />
+                        </div>
+                        <div class="form-groupo">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" placeholder="ana@correo.com" />
+                        </div>
+                        <div class="form-groupo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" placeholder="Contanos en qué podemos ayudarte..."></textarea>
+                        </div>
+                        <button class="submit-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                            Enviar mensaje
+                        </button>
+                    </form>
+                    <div class="contacto-info">
+                        <div class="info-item">
+                            <div class="info-icono">📍</div>
+                            <div>
+                            <strong>Dirección</strong>
+                            <div>Av. Santa Fe 2345, Palermo, CABA</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icono">📞</div>
+                            <div>
+                            <strong>Teléfono</strong>
+                            <div>+54 11 4567-8901</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icono">🕐</div>
+                            <div>
+                            <strong>Horarios</strong>
+                            <div>Lun–Sáb: 9:00–18:00 · Dom: 10:00–15:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapa-wrap">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016884088784!2d-58.41714922392282!3d-34.5960373727695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58b5e8f0001%3A0x5e8f0001b58b5e8f!2sAv.%20Santa%20Fe%202345%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación Raíces Verdes"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-top">
+            <div class="footer-marca">
+                <div class="footer-logo">
+                <div class="footer-logo-icono">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 22V12M12 12C12 12 7 10 5 6C9 4 13 7 12 12ZM12 12C12 12 17 10 19 6C15 4 11 7 12 12Z" stroke="#7bbf52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 22C8 18 10 16 12 16C14 16 16 18 16 22" stroke="#4a8a2a" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <strong>Raíces Verdes</strong>
+                </div>
+                <p>Llevamos la naturaleza a tu hogar desde 2016. Plantas saludables, asesoramiento experto y amor por lo que hacemos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Tienda</h4>
+                <ul>
+                <li><a href="#">Plantas de interior</a></li>
+                <li><a href="#">Plantas de exterior</a></li>
+                <li><a href="#">Cactus y suculentas</a></li>
+                <li><a href="#">Hierbas aromáticas</a></li>
+                <li><a href="#">Macetas y accesorios</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Información</h4>
+                <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Blog de jardinería</a></li>
+                <li><a href="#">Cómo cuidar tus plantas</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                <li><a href="#">Seguir mi pedido</a></li>
+                <li><a href="#">Política de devolución</a></li>
+                <li><a href="#">Envíos y entregas</a></li>
+                <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <span>© 2026 Raíces Verdes. Todos los derechos reservados.</span>
+            <div class="terminos-condiciones">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos de uso</a>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="carrito-overlay" id="cartOverlay"></div>
+
+    <aside class="carrito-drawer" id="cartDrawer">
+        <div class="carrito-drawer-header">
+            <h2>Tu Carrito</h2>
+            <button class="btn-cerrar-carrito" id="closeCartBtn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <div class="carrito-drawer-body" id="cartBody">
+            </div>
+
+        <div class="carrito-drawer-footer">
+            <div class="carrito-total-container">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="btn-comprar-carrito">Finalizar Compra</button>
+        </div>
+    </aside>
+
+    <div class="toast-alerta" id="toast">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2d5a1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span id="toast-mensaje">Producto agregado con éxito</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
